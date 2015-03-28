@@ -20,8 +20,17 @@ $(function() {
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
+
+        ga('send', 'event', 'button', 'click', $anchor.attr('href'));
         event.preventDefault();
     });
+
+
+    $('#contact a').bind('click', function(event) {
+        var $anchor = $(this);
+        ga('send', 'event', 'button', 'click', $anchor.attr('href'));
+    });
+
 });
 
 // Closes the Responsive Menu on Menu Item Click

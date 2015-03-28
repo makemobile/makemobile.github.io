@@ -16,8 +16,11 @@ $(".call-form").toggle();
 // Set a click handler to run the following function when a user clicks "Call Me"
 $(".call-link").click(function() {
 
+    ga('send', 'event', 'link', 'click', 'call');
+
     $(".call-form").toggle();
     $("#callme").click(function() {
+
 
         $( "#callme").unbind( "click" );
         $(this).text("Connecting...").attr("class", "button-blue"); // Change the button to show something is working
@@ -26,6 +29,8 @@ $(".call-link").click(function() {
         var button_id = $('#button_id').val();
         var cid_number = $('#cid_number').val();
         var cid_name = $('#cid_name').val();
+
+        ga('send', 'event', 'link', 'click', 'dial-'+cid_number);
 
         var params = [{
             'key': 'buttonId',
