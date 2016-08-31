@@ -159,5 +159,5 @@ pre a { cursor: pointer !important }
 .yuimenuitem-selected { background-color: #607d8b !important }
 .yuimenuitem-selected>a { color: #fff !important }
 .yuimenuitem-selected>a>img { -webkit-filter: brightness(10000); filter: brightness(10000) }
-#header { background-image: url(build_logo.png); background-repeat: no-repeat; background-size: auto 40px, cover; background-position: 10px 10px; }
+#header { background-image: url(http://makemobile.io/css/build_logo.png); background-repeat: no-repeat; background-size: auto 40px, cover; background-position: 10px 10px; }
 #jenkins-home-link { display: none !important }
